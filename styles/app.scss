@@ -1,0 +1,30 @@
+@import './functions';
+
+.-body {
+  width: rem(800px);
+}
+.-body__content {
+  // width: 115rem;
+  // width: 40rem;
+}
+.-sidebar {
+  background-color: #aaa888;
+}
+// 
+.-sidebar__content {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.-outbar__content {
+  // min-height: 90rem;
+  background-color: #f739c821;
+}
+
+.-main {
+  // width: 40rem;
+  // height: 90rem;
+}
+// @media only screen and (max-width: 115rem) {
+  // 
+// }

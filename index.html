@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>=layout=</title>
+		<meta charset="UTF-8" />
+		<link href="/styles/index.scss" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body class="-app">
+		<header class="-header">
+			<div class="-header__content" id="-header-content">
+				<h3>render :partial => '/layouts/main/header'</h3>
+			</div>
+		</header>
+
+		<div class="-body">
+			<div class="-body__content" id="-app">
+				<aside class="-sidebar -panel">
+					<div class="-sidebar__content -panel__content">
+						<!-- <%= yield :sidebar %> -->
+						sidebar
+					</div>
+				</aside>
+				<main class="-main" role="main">
+					<!-- <%= yield %> -->
+					main
+				</main>
+				<aside class="-outbar -panel">
+					<div class="-outbar__content -panel__content">
+						<!-- <%= yield :outbar %> -->
+						outbar
+					</div>
+				</aside>
+			</div>
+		</div>
+
+		<footer class="-footer">
+			<div class="-footer__content">
+				<h3>render :partial => '/layouts/main/footer'</h3>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+@import './functions';
+
+html {
+	box-sizing: border-box;
+	min-height: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: flex;
+	justify-content: center;
+}
+body {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: rem(14px);
+	padding: 0;
+	margin: 0;
+	flex-grow: 1;
+	min-height: 100%;
+	/* box-sizing: border-box; */
+	border: solid 3px darkred;
+}
+header {
+	width: 100%;
+	background-color: rgba(42, 165, 58, 0.185);
+}
+footer {
+	width: 100%;
+	background-color: rgba(42, 165, 58, 0.185);
+}
+
+// <body >
+.-app {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.-body {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	border: solid 3px green;
+}
+.-body__content {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: stretch;
+	justify-content: space-between;
+	background-color: #5bdbec4d;
+}
+.-sidebar {
+	border: dotted 5px blue;
+}
+.-main {
+	flex-grow: 1;
+	border: dotted 5px red;
+}
+.-outbar {
+	border: dotted 5px blue;
+}
+
+// * * * * * * * * * * * *
+// default layout sizes 
+.-body {
+	width: rem(1280px); // default body width
+
+	// background-color: red;
+	// width: _rem($px: 1280);
+	// margin-left: pow(4, 3) * 1px;
+	// width: rem(1280) * 1px;
+	
+	// width: #{rem($px: 1280)}rem;
+	// padding-left: #{_v($SubItemList, 'indent', $indent)}px;
+
+	// min-width: 1280px; 
+}
